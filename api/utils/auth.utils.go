@@ -10,7 +10,7 @@ import (
 // TODO: Rename to checkUserIsAuthorized
 func MatchUserTypeToUserID(c *gin.Context, userID string) (err error) {
 	userType := c.GetString("userType")
-	uid := c.GetString("uid")
+	uid := c.GetString("userID")
 	err = nil
 
 	// TODO: Add constant for userTypes
